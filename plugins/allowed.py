@@ -13,8 +13,8 @@ allowed_user = filters.create(owner)
 @Client.on_message(filters.private & allowed_user & filters.incoming)
 async def not_owner(bot, message):
     btn = [[
-        InlineKeyboardButton('Repo', url='https://github.com/Hansaka-Anuhas/ForwardBot')
+        InlineKeyboardButton('Repo', url='')
     ],[
-        InlineKeyboardButton('Developer', url='https://t.me/Hansaka_Anuhas')
+        InlineKeyboardButton('Developer', url='')
     ]]
     await message.reply("You can't access this bot, Create your own bot.", reply_markup=InlineKeyboardMarkup(btn))

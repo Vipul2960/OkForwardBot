@@ -1,7 +1,7 @@
 {
     "name": "File-Forward-Bot",
     "description": "Use this bot to forward all files from one channel to other even if its private or public.",
-    "stack": "container",
+    "stack": "",
     "keywords": [
       "file-forward",
       "media-forward"

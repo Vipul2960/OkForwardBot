@@ -1,0 +1,27 @@
+{
+    "name": "File-Forward-Bot",
+    "description": "Use this bot to forward all files from one channel to other even if its private or public.",
+    "stack": "container",
+    "keywords": [
+      "file-forward",
+      "media-forward"
+    ],
+    "website": "https://github.com/mdrobot3115/OkForwardBot",
+    "repository": "https://github.com/mdrobot3115/OkForwardBot",
+    "env": {
+        "config": {
+            "description": "Your bot token.",
+            "required": true
+        },
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}

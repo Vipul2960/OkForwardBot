@@ -9,10 +9,30 @@
     "website": "https://github.com/mdrobot3115/OkForwardBot",
     "repository": "https://github.com/mdrobot3115/OkForwardBot",
     "env": {
-        "config": {
+        "BOT_TOKEN": {
             "description": "Your bot token.",
             "required": true
         },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "FILE_CAPTION": {
+            "description": "ID of channel which you want the bot to send all files to.",
+            "required": true
+        },
+        "OWNER": {
+            "description": "ID of Admin. Separate multiple Admins by space.",
+            "required": true
+        },
+        "PRIVATE_BOT": {
+            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "required": true
+        }
     },
     "addons": [],
     "buildpacks": [{

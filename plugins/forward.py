@@ -168,7 +168,7 @@ async def forward_files(lst_msg_id, chat, msg, bot, user_id):
             elif not message.media:
                 unsupported += 1
                 continue
-            elif message.media not in [enums.MessageMediaType.DOCUMENT, enums.MessageMediaType.AUDIO, enums.MessageMediaType.VOICE, enums.MessageMediaType.PHOTO, enums.MessageMediaType.TEXT, enums.MessageMediaType.VIDEO]:  # Non documents and videos files skipping
+            elif message.media not in [enums.MessageMediaType.DOCUMENT, enums.MessageMediaType.AUDIO, enums.MessageMediaType.VOICE, enums.MessageMediaType.PHOTO, enums.MessageMediaType.VIDEO]:  # Non documents and videos files skipping
                 unsupported += 1
                 continue
             media = getattr(message, message.media.value, None)
